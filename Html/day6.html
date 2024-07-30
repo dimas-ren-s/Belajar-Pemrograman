@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        form {
+            width: 600px;
+            padding: 20px;
+        }
+
+        form div {
+            margin: 10px;
+        }
+
+        label {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>DAY 6 : BELAJAR HTML</h1>
+    
+<!-- #################################################### -->
+
+<!-- ============== FORM VALIDATION HTML 5 ============== -->
+
+<!-- #################################################### -->
+
+    <!-- 
+        HTML 5 Built in Validation :
+            Html input types : 
+                1. email
+                2. tel 
+                3. url
+                4. number
+                5. range
+                6. datetime picker (date, day, month, week, year)
+                7. color picker
+
+            Html input attributes :
+                1. autocomplete(input/form)
+                2. autofocus
+                3. required
+                4. minLength dan maxLength
+                5. min dan max
+                6. step
+                7. pattern
+    -->
+
+    <form action="" method="post">
+        <div>
+            <label for="nama">Masukkan Nama</label>
+            <input type="text" name="nama" id="nama" autocomplete="off">
+        </div>
+        
+        <div>
+            <label for="email">Masukkan Email</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div>
+            <label for="nohp">Masukkan No HP</label>
+            <input type="tel" name="nohp" id="nohp" minlength="10" maxlength="13">
+        </div>
+
+        <div>
+            <label for="nohp">Masukkan No HP dengan Pattern Regex</label>
+            <input type="tel" name="nohp" id="nohp" pattern="(\+62|62\0)8[1-9][0-9]{6,9}$">
+        </div>
+
+        <div>
+            <label for="usia">Masukkan Usia</label>
+            <input type="number" name="usia" id="usia" min="10" max="100">
+        </div>
+
+        <div>
+            <label for="slider">Masukkan Usia</label>
+            <span class="awal"></span>
+            <input type="range" name="slider" id="slider" min="0" max="100">
+            <span class="akhir"></span>
+        </div>
+
+
+        <div>
+            <label for="tanggal">Masukkan Tanggal</label>
+            <input type="date" name="tanggal" id="tanggal">
+        </div>
+
+        <div>
+            <label for="warna">Masukkan Warna</label>
+            <input type="color" name="warna" id="warna">
+            <span class="hexa"></span>
+        </div>
+
+        <div>
+            <button type="submit">Kirim!</button>
+        </div>
+    </form>
+
+    <script>
+        const awal = document.querySelector('.awal');
+        const akhir = document.querySelector('.akhir');
+        const slider = document.querySelector('#slider');
+        
+        awal.innerHTML = slider.min;
+        akhir.innerHTML = slider.max;
+        slider.addEventListener('input', function(){
+            akhir.innerHTML = slider.value;
+        });
+
+        const warna = document.querySelector('#warna');
+        const hexa = document.querySelector('.hexa');
+
+        hexa.innerHTML = warna.value;
+        warna.addEventListener('input', function(){
+            hexa.innerHTML = hexa.style.color = warna.value;
+        });
+    </script>
+
+
+
+<!-- ################################################ -->
+
+<!-- ============== WEB StORAGE HTML 5 ============== -->
+
+<!-- ################################################ -->
+
+    <!-- 
+        Web Storage : 
+            Bentuk penyimpanan pada local website yang cocok untuk data non-sensitif
+            Contoh : last time ketika nonton video di youtube, atau fitur dark mode manual yang dapat di simpan di local
+    -->
+
+
+
+<!-- ###################################################### -->
+
+<!-- ============== WEB ACCESSIBILITY HTML 5 ============== -->
+
+<!-- ###################################################### -->
+
+    <!-- 
+        Apa itu Web Accessability : 
+            1. Buat struktur DOM(document object model) yang 'masuk akal'
+            2. Gunakan Semantic Elemen
+            3. Interactive control
+            4. Memberi label pada tiap control dan gambar
+            5. Terapkan manjemen fokus yang intuitif
+            6. Penuh akses dengan keyboard
+            7. Tambahkan ARIA jika dibutuhkan (role)
+    -->
+
+<!-- ################################################### -->
+
+<!-- ============== END OF HTML 5 : DAY 6 ============== -->
+
+<!-- ################################################### -->
+
+
+</body>
+</html>

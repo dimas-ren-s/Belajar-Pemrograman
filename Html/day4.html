@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+    </style>
+</head>
+<body>
+    <h1>DAY 4 : BELAJAR HTML</h1>
+    
+<!-- ########################################## -->
+
+<!-- ============== VIDEO HTML 5 ============== -->
+
+<!-- ########################################## -->
+
+    <!-- <video> : Sebuah tag yang merepresentasikan video -->
+        <!-- Atribut : src, controls, loop, autoplay, preload, muted, poster, width, heigth -->
+    <figure>
+        <!-- Kita bisa memisahkan atribut src menjadi <source> yang bersifat lebih fleksible -->
+        <!-- <video src="video/kucing1.mp4" controls width="400"></video> -->
+        <video 
+            controls 
+            width="400" 
+            poster="img/kucingSmall.png" 
+            autoplay 
+            muted>
+                <source 
+                    src="video/kucing2.webm" 
+                    type="video/webm">
+                <source 
+                    src="video/kucing1.mp4" 
+                    type="video/mp4">
+                <track 
+                    src="video/caption.vtt" 
+                    kind="captions" 
+                    title="Bahasa Indonesia" 
+                    srclang="id">
+                <track 
+                    src="video/caption.vtt" 
+                    kind="captions" 
+                    title="English" 
+                    srclang="en">
+                Tidak ada video yang dapat diputar
+        </video>
+        <figcaption>Putar - Kucing Tidur</figcaption>
+    </figure>
+
+    <!-- track : Sebuah pendukung tag video -->
+        <!-- Atribut : src, kind(subtitle, caption, chapter, description), title(English/Bahasa Indonesia), srclang(en, id) -->
+        <!-- Membuat caption butuh sebuah file .vtt dan harus dijalankan di server ga bisa di local -->
+
+    <!-- Embed : video dari youtube -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/SQMruNuafHk?si=YinzZMeHGog8VK9u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+<!-- ########################################## -->
+
+<!-- ============== CANVAS HTML 5 ============== -->
+
+<!-- ########################################## -->
+
+    <!-- <canvas> : sebuah tag yang merepresentasikan sebuah grafis(2d, 3d, animasi, game) yang dapat diubah dengan javascript -->
+        <!-- Atribut : width, height -->
+        <!-- API : 2D canvas API dan 3D WebGL API -->
+        <!-- Shapes : rectangle, arc/circle, bazier & quadrative curve, path -->
+
+    <canvas id="myCanvas"></canvas>
+    <script src="js/canvas.js"></script>
+
+<!-- ################################################### -->
+
+<!-- ============== END OF HTML 5 : DAY 3 ============== -->
+
+<!-- ################################################### -->
+
+
+</body>
+</html>
