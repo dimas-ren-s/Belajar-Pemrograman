@@ -1,0 +1,195 @@
+<!-- ################################## -->
+
+<!-- ============== HTML ============== -->
+
+<!-- ################################## -->
+
+
+<!-- Kepanjangan : Hypertext Markup Language -->
+
+<!-- Versi 5 / Versi Terbaru -->
+
+<!-- Membuat sebuah File html versi terbaru : -->
+<!-- 
+<!DOCTYPE html>
+<html lang="en"></html> 
+-->
+
+
+
+<!-- ######################################### -->
+
+<!-- ============== HEAD & BODY ============== -->
+
+<!-- ######################################### -->
+
+
+<!-- Tag Head : Berisi Title, Metadata, Style, Script -->
+
+<!-- Tag Body : Berisi Teks(Judul, Paragraf), Efek teks(ENTER, bold, strong, italic, underline, strike, hr(garis)), Gambar, Hyperlink, List, Tabel, Form, Object, Script, Div/Span -->
+
+
+
+<!-- ########################################## -->
+
+<!-- ============== LET'S CREATE ============== -->
+
+<!-- ########################################## -->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Belajar HTML</title>
+        <meta key="Keywords" content="Belajar HTML">
+        <meta key="Author" content="Dimas Rendy Sugara">
+        <style>
+            h1 {
+                color: blue;
+            }
+        </style>
+        <!-- <script></script> -->
+    </head>
+
+    <body>
+        <!-- Judul -->
+        <h1 id="judul-h1">Judul H1</h1>
+        <h2>Judul H2</h2>
+        <h6>Hingga H6</h6>
+
+        <!-- Paragraf -->
+        <p>Ini adalah paragraf baru</p>
+
+        <!-- Efek Teks -->
+        <!-- ENTER : <br> -->
+        <br>
+
+        <!-- Garis Lurus tanpa Teks : <hr> -->
+        <hr>
+
+        <!-- Bold, Italic, Underline : <b>, <i>, <u> -->
+        <p>Ini adalah <b>Teks Bold</b>, <i>Teks Italic</i>, <u>Teks Underline</u></p>
+
+        <!-- Strong(mirip bold) dan EM(mirip italic) : Penekanan yang lebih spesifik, bukan sekedar dekorasi -->
+        <hr>
+
+        <!-- List : Order List & UnOrder List & Definition List-->
+
+        <!-- List didalam OL/UL : <li> -->
+        <!-- Order List : List berurutan : <ol> : atribut -> type="1/a/A/i/I"-->
+        <h3>Order List :</h3>
+        <ol type="a">
+            <li>List li pertama</li>
+            <li>List li kedua</li>
+        </ol>
+
+        <!-- Unorder list : List tidak berurutan : <ul> : atribut -> type="disc, square, circle" -->
+        <h3>Unorder List :</h3>
+        <ul type="square">
+            <li>List li pertama</li>
+            <li>List li kedua</li>
+        </ul>
+
+        <!-- Definition List :  List yang didefinisikan : <dl> -->
+        <!-- Terms : <dt> & Definition : <dd> -->
+        <h3>Definition List :</h3>
+        <dl>
+            <dt>Beginner</dt>
+            <dd>Beginner is Pemula</dd>
+            <dt>Advanced</dt>
+            <dd>Advanced is Senior</dd>
+        </dl>
+
+        <hr>
+
+        <!-- Link : <a> : atribut -> href="" -->
+        <h3>Link </h3>
+        Contoh : <a href="https://www.youtube.com/watch?v=QIlBOI-hTuA&list=PLFIM0718LjIVuONHysfOK0ZtiqUWvrx4F&index=8"> klik disini </a>
+
+        <!-- Link ke id di suatu halaman -->
+        <!-- Link bisa menentukan target untuk dibuka pada halaman itu sendiri atau buka tab baru : atribut -> target="_self/_blank" -->
+        <br>
+        Contoh ID ke Judul H1 : <a href="day1.html#judul-h1" target="_blank">Klik Disini ke Judul H1</a> <!-- href day1.html dapat digabung dengan id, jadi langsung jump ke tampilan id itu -->
+        <br>
+        
+        <hr>
+
+        <!-- Gambar : <img> -->
+        <!-- Atribut : src, alt, width, height, title -->
+        <h3>Gambar </h3>
+        <img src="../../Picture/Cat from MyWallpaper.png" width="400px" alt="Gambar Kucing" title="Kucing">
+
+        <hr>
+
+        <!-- Tabel : <table> -->
+            <!-- Table Row : <tr> -->
+                <!-- Table Data : <td> -->
+        
+        <!-- Atribut : border, cellspacing, cellpadding, colspan, rowspan -->
+        <h3>Table</h3>
+        <table border="2" cellpadding="5">
+            <tr>
+                <td>1,1</td>
+                <td>1,2</td>
+                <td>1,3</td>
+                <td>1,4</td>
+            </tr>
+            <tr>
+                <td>2,1</td>
+                <td colspan="2" rowspan="2">2,2 - 3,3</td>
+                <td>2,4</td>
+            </tr>
+            <tr>
+                <td>3,1</td>
+                <td>3,4</td>
+            </tr>
+            <tr>
+                <td>4,1</td>
+                <td>4,2</td>
+                <td>4,3</td>
+                <td>4,4</td>
+            </tr>
+        </table>
+
+        <hr>
+
+        <!-- Form : <form> -->
+        <!-- Atribut : action -->
+            <!-- Label : <label> -->
+                <!-- Atribut : for -->
+            <!-- Input : <input> -->
+                <!-- Atribut : type(text, email, password, radio, checkbox), id, name, value -->
+            <!-- Button : <button> -->
+                <!-- Atribut : type(submit, button, reset, menu) -->
+            <!-- TextArea : <textarea> -->
+                <!-- Atribut : name, id -->
+            <!-- Select : <select> -->
+                <!-- Pilihan : <options> -->
+                <!-- Atribut : name, id -->
+        <h3>Form</h3>
+        <form action="">
+            <label for="username">Username :</label>
+            <input type="text" id="username">
+            <br>
+            <label for="password">Password :</label>
+            <input type="password" id="password">
+            <br>
+            <input type="radio" id="pria" name="jenis_kelamin"><label for="pria">Pria</label>
+            <input type="radio" id="wanita" name="jenis_kelamin"><label for="wanita">Wanita</label>
+            <br>
+            <input type="checkbox" name="hobi" id="ngoding"><label for="ngoding">Ngoding</label>
+            <input type="checkbox" name="hobi" id="membaca"><label for="membaca">Membaca</label>
+            <input type="checkbox" name="hobi" id="berlari"><label for="berlari">Berlari</label>
+            <br>
+            <textarea name="paragraf" id="paragraf"></textarea>
+            <br>
+            <select name="pilih_kota" id="pilih_kota">
+                <option value="bandaaceh">Banda Aceh</option>
+                <option value="bandung">Bandung</option>
+                <option value="jakarta">Jakarta</option>
+            </select>
+            <br>
+            <button type="button">Simpan</button>
+        </form>
+    </body>
+</html>

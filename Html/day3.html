@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<!-- ##################################################### -->
+
+<!-- ============== Kategori Element HTML 5 ============== -->
+
+<!-- ##################################################### -->
+<h1>DAY 3 : BELAJAR HTML</h1>
+
+
+<!-- Main : Menampilkan konten utama dari website, dimana 1 halaman hanya berisi 1 main saja -->
+<!-- Header : Merepresentasikan sebuah pembuka halaman, yang biasanya juga berisi logo dan navigasi-->
+<!-- Nav : Merepresentasikan Navbar dari halaman -->
+<!-- Footer : Merepresentasikan footer dari halaman -->
+<!-- Section : Menggantikan div yang disarankan untuk memiliki judul -->
+<!-- Article : Merepresentasikan sebuah konten yang independen atau tersendiri, Misalnya Produk card -->
+<!-- Aside : Merepresentasikan sebuah teks berisi konten singkat, Misalnya tips dari paragraf / note -->
+
+<!-- <div role="navigation"> : akan merepresentasikan sebuah element semantic walaupun menggunakan konsep html 4 yaitu div -->
+
+
+<!-- ########################################## -->
+
+<!-- ============== Image HTML 5 ============== -->
+
+<!-- ########################################## -->
+
+
+<!-- <img> : Menampilkan gambar(konten) -->
+    <!-- Atribut : src, alt, width, height, title, srcset, sizes, loading -->
+        <!-- src : path / hot link(tidak disarankan) -->
+        <!-- alt : alternative text -->
+        <!-- width & height : menentukan salah satu saja agar sesuai ratio -->
+        <!-- title : Menampilkan tooltip judul -->
+        <!-- srcset : Membuat halaman responsive dengan syarat tertentu (lebar layar atau kerapatan pixel) : pakai di picture aja -->
+        <!-- sizes : Membuat sebuah ukuran batas yang mengubah viewport : pakai di picture aja -->
+        <!-- loading="eager, lazy" : Membuat gambar loading ketika sudah masuk viewport -->
+    <h2>IMAGE</h2>
+    <img src="img/kucingSmall.png" alt="Gambar Kucing" width="300px" title="Kucing Berenang" loading="lazy">
+
+<!-- <figure> : Menampilkan gambar/audio/snippets yang cocok digunakan bersama caption -->
+    <!-- <figcaption> : Sebuah caption pada tag figure -->
+    <h2>FIGURE</h2>
+    <figure>
+        <img src="img/kucingSmall.png" alt="Gambar Kucing" width="300px">
+        <figcaption>Gambar small. Kucing Berenang</figcaption>
+    </figure>
+    
+<!-- <picture> : Menampilkan beberapa gambar dengan default berupa img -->
+    <!-- <source> : sebuah img yang dikhususkan untuk picture -->
+        <!-- Atribut : media, srcset, sizes -->
+    
+    <h2>PICTURE</h2>
+    <picture>
+        <source srcset="file:///Users/dimasrendysugara/Documents/Pemrograman/Html/img/kucingMedium.png" media="(min-width: 850px)" sizes="30vw">
+        <source srcset="file:///Users/dimasrendysugara/Documents/Pemrograman/Html/img/kucingSmall.png" media="(min-width: 650px)" sizes="50vw">
+        <img src="img/kucingLarge.png" alt="Alternative Kucing">
+    </picture>
+
+    <br><hr><br>
+
+
+<!-- ########################################## -->
+
+<!-- ============== Audio HTML 5 ============== -->
+
+<!-- ########################################## -->
+
+<!-- <audio> : Menjalankan sebuah audio berbentuk .mp3, .wav, .ogg -->
+    <!-- Atribut : src, control, autoplay, loop, muted, preload -->
+    <h2>AUDIO</h2>
+    <figure>
+        <figcaption>Dengarkan - Moonligth Coffee</figcaption>
+        <audio src="audio/moonlightcoffee.mp3" controls>
+    </figure>
+
+
+
+<!-- ################################################### -->
+
+<!-- ============== END OF HTML 5 : DAY 3 ============== -->
+
+<!-- ################################################### -->
+
+
+</body>
+</html>
